@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="shortcut icon" href="https://crushingit.tech/hackathon-assets/shopify-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="https://shopify.com">
+                <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="logo" class="large-logo">
+                <img class="small-logo" src="https://crushingit.tech/hackathon-assets/shopify-icon.svg" alt="logo"></a>
+
+        </div>
+        <form action="" class="search-container">
+            <label for="search">search</label>
+            <input type="text" id="search" placeholder="Search" autofocus>
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 13 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z" fill="#fff"/>
+              </svg>
+        </form>
+        <div class="usr-tools">
+            <div class="notif" id="notif" tabindex="0" aria-label="Show Alerts">
+                <img class="bell" src="./assets/bell.svg" alt="notifications">
+                <div class="alerts">
+                    <div class="alert-head">
+                        <p>Alerts</p>
+                        <div class="alert-icons">
+                            <img src="./assets/sort.svg" alt="sort">
+                            <img src="./assets/alert-check.svg" alt="check">
+                        </div>
+                    </div>
+                    <p class="alert-body">
+                        Alerts about your store and account will show here
+                    </p>
+                </div>
+            </div>
+            <div class="store" id="store" tabindex="0" aria-label="Show store settings">
+                <p class="store-text">Davii Collections <span>DC</span></p>
+                <div class="stores">
+                    <div class="stores-head">
+                        <p><span>DC</span>Davii Collections</p>
+                        <img src="./assets/check.svg" alt="check">
+                    </div>
+                    <div class="all-stores" tabindex="0" aria-label="All stores">
+                        <img src="./assets/store.svg" alt="store">
+                        <a target="_blank" href="https://admin.shopify.com">All stores</a>
+                    </div>
+                    <hr>
+                    <p tabindex="0" aria-label="Help center"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Help center</a></p>
+                    <p tabindex="0" aria-label="Change log"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Changelog</a></p>
+                    <p tabindex="0" aria-label="Community forums"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Community forums</a></p>
+                    <p tabindex="0" aria-label="Hire a shopify partner"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Hire a Shopify Partner</a></p>
+                    <p tabindex="0" aria-label="Keyboard shortcuts"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Keyboard shortcuts</a></p>
+                    <hr>
+                    <div class="user-name">
+                        <p class="name">David Michael</p>
+                        <p class="mail">davidmichael@gmail.com</p>
+                    </div>
+                    <p tabindex="0" aria-label="Manage account"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Manage account</a></p>
+                    <p tabindex="0" aria-label="log out"><a target="_blank" class="store-link"
+                            href="https://admin.shopify.com">Log out</a></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="trial-ad">
+                <p>Extend your trial for $1/month for 3 months on select plans.</p>
+                <div class="btn-close">
+                    <button><a target="_blank" href="https://shopify.com/pricing">Select a Plan</a></button>
+                    <svg class="svg-close" aria-label="close trial" width="41" height="40" viewBox="0 0 21 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z"
+                            fill="#fff" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="setup">
+                <div class="setup-head">
+                    <p>Setup guide</p>
+                    <img class="dropdown" src="./assets/dropdown.svg" alt="dropdown">
+                </div>
+                <p class="setup-info">
+                    Use this personalized guide to get your store up and running.
+                </p>
+                <div class="progress">
+                    <p><span id="completed">0</span> / 5 completed</p>
+                    <progress value="0" max="100"></progress>
+                </div>
+                <!-- Accordion -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="svg-container" style="position: relative;">
+                                <input type="checkbox" class="step-checkbox" style="opacity: 0; position: absolute; left: -18px;width: 100%; height: 100%;">
+                                <img src="./assets/01.svg" >
+                            </div>
+                            <p>Customize your online store</p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="cont-text">
+                                <p>Choose a theme and add your logo, colors, and images to reflect your brand. <span> <a
+                                            target="_blank"
+                                            href="https://www.figma.com/exit?url=https%3A%2F%2Fhelp.shopify.com%2Fmanual%2Fonline-store%2Fthemes%2Fcustomizing-themes">Learn
+                                            more</a>
+                                    </span></p>
+                                <button>Customize theme</button>
+                            </div>
+                            <div class="cont-img">
+                                <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="img1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div id="svg-container" style="position: relative;">
+                                <input type="checkbox" class="step-checkbox" style="opacity: 0; position: absolute; left: -18px;width: 100%; height: 100%;">
+                                <img src="./assets/01.svg" >
+                            </div>
+                            <p>Add your first product</p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="cont-text">
+                                <p>Write a description, add photos, and set pricing for the products you plan to sell.
+                                    <span> <a target="_blank"
+                                            href="https://www.figma.com/exit?url=https%3A%2F%2Fhelp.shopify.com%2Fmanual%2Fproducts%2Fadd-update-products">Learn
+                                            more</a>
+                                    </span>
+                                </p>
+                                <div class="pro-wrap"><button>Add product </button> <span
+                                        style="font-weight: bold;">Import product</span></div>
+                            </div>
+                            <div class="cont-img">
+                                <img src="https://crushingit.tech/hackathon-assets/product.png" alt="img1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div id="svg-container" style="position: relative;">
+                                <input type="checkbox" class="step-checkbox" style="opacity: 0; position: absolute; left: -18px;width: 100%; height: 100%;">
+                                <img src="./assets/01.svg" >
+                            </div>
+                            <p>Add a custom domain</p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="cont-text">
+                                <p>Your current domain is 222219.myshopify.com but you can add a custom domain to help
+                                    customers find your online store. <span> <a target="_blank"
+                                            href="https://www.figma.com/exit?url=https%3A%2F%2Fhelp.shopify.com%2Fmanual%2Fdomains">Learn
+                                            more</a>
+                                    </span></p>
+                                <button>Add domain </button>
+                            </div>
+                            <div class="cont-img">
+                                <img src="https://crushingit.tech/hackathon-assets/website.png" alt="img1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div id="svg-container" style="position: relative;">
+                                <input type="checkbox" class="step-checkbox" style="opacity: 0; position: absolute; left: -18px;width: 100%; height: 100%;">
+                                <img src="./assets/01.svg" >
+                            </div>
+                            <p>Name your store</p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="cont-text">
+                                <p>Your temporary store name is currently Davii collections. The store name appears in
+                                    your admin and your online store. <span> <a target="_blank"
+                                            href="https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings#set-or-change-your-online-store-name-and-legal-business-name">Learn
+                                            more</a>
+                                    </span></p>
+                                <button>Name store</button>
+                            </div>
+                            <div class="cont-img">
+                                <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="img1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div id="svg-container" style="position: relative;">
+                                <input type="checkbox" class="step-checkbox" style="opacity: 0; position: absolute; left: -18px;width: 100%; height: 100%;">
+                                <img src="./assets/01.svg" >
+                            </div>
+                            <p>Set up a payment provider</p>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="cont-text">
+                                <p>Choose a payment provider to start accepting payments. You'll need to create an
+                                    account with the payment provider and set it up with your Shopify store. <br> <span>
+                                        <a target="_blank"
+                                            href="https://www.figma.com/exit?url=https%3A%2F%2Fhelp.shopify.com%2Fmanual%2Fpayments">Learn
+                                            more</a>
+                                    </span></p>
+                                <button>Set up payment </button>
+                            </div>
+                            <div class="cont-img">
+                                <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="img1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
