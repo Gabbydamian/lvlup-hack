@@ -141,11 +141,11 @@ window.onload = function() {
   for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('change', function() {
       var svg = this.parentElement.querySelector('img');
-
+  
       if (this.checked) {
         svg.src = 'https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg';
         svg.style.width = '24px';
-
+  
         var nextAccordion = accordionItems[i+1];
         if (nextAccordion) {
           toggleAccordion(nextAccordion.querySelector('.accordion-header'));
@@ -153,10 +153,23 @@ window.onload = function() {
       } else {
         svg.src = './assets/01.svg';
       }
-
+  
       updateProgress();
     });
-  }
-
-  updateProgress();
-};
+  
+    // Add hover effect to checkbox
+    checkboxes[i].addEventListener('mouseover', function() {
+      if (!this.checked) { // Add this line
+        var svg = this.parentElement.querySelector('img');
+        svg.src = 'assets/02.svg';
+      }
+    });
+    checkboxes[i].addEventListener('mouseout', function() {
+      var svg = this.parentElement.querySelector('img');
+      if (this.checked) {
+        svg.src = 'https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg';
+      } else {
+        svg.src = './assets/01.svg';
+      }
+    });
+  }}
