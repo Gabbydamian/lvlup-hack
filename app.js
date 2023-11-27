@@ -161,7 +161,7 @@ window.onload = function() {
     checkboxes[i].addEventListener('mouseover', function() {
       if (!this.checked) { // Add this line
         var svg = this.parentElement.querySelector('img');
-        svg.src = 'assets/02.svg';
+        svg.src = 'https://crushingit.tech/hackathon-assets/icon-spinner.svg';
       }
     });
     checkboxes[i].addEventListener('mouseout', function() {
