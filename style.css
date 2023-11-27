@@ -181,6 +181,13 @@ form {
     cursor: pointer;
 }
 
+.check-ani{
+    width: 24px;
+    border-radius: 100px;
+    background-color: rgb(190, 188, 188)
+    /* background-color: rebeccapurple; */
+}
+
 .user-name {
     display: flex;
     flex-direction: column;
@@ -298,15 +305,22 @@ form {
     color: #303030;
 }
 
-.bell {
+.bell-wrap {
+    display: grid;
+    place-items: center;
     padding: 8px;
-    background: #303030;
     border-radius: 8px;
+    background: #303030;
 }
 
-.bell:hover,
+.store-check{
+    margin-right: 10px;
+}
+
+
+.bell-wrap:hover,
 .store>p:hover {
-    background-color: #656266;
+    background: #404040;
     cursor: pointer;
 }
 

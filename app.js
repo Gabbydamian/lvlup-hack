@@ -33,7 +33,7 @@ for (var i = 0; i < svgContainers.length; i++) {
   var img = svgContainers[i].querySelector('img');
 
   img.addEventListener('click', function() {
-    this.src = './assets/03.png';
+    this.src = 'https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg';
     var accordion = this.closest('.accordion');
     accordion.classList.add('completed');
     var nextAccordion = accordions[i+1];
@@ -151,7 +151,7 @@ window.onload = function() {
           toggleAccordion(nextAccordion.querySelector('.accordion-header'));
         }
       } else {
-        svg.src = './assets/01.svg';
+        svg.src = 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg';
       }
   
       updateProgress();
@@ -169,7 +169,7 @@ window.onload = function() {
       if (this.checked) {
         svg.src = 'https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg';
       } else {
-        svg.src = './assets/01.svg';
+        svg.src = 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg';
       }
     });
   }}
